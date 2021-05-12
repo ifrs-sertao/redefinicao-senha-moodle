@@ -1,0 +1,1 @@
+Portal de redefinição de senha de acesso a plataforma Moodle do IFRS - Campus Sertão.
