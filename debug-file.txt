@@ -1,0 +1,732 @@
+Smarty 3.1.34-dev-7 Debug Console - "file:index.tpl" Total Time 0.00513
+included templates & config files (load time in seconds)
+/var/www/templates/index.tpl
+   (compile 0.00000) (render 0.00100) (cache 0.00000)
+/var/www/templates/header.tpl
+   (compile 0.00000) (render 0.00009) (cache 0.00000)
+/var/www/templates/menu.tpl
+   (compile 0.00000) (render 0.00009) (cache 0.00000)
+/var/www/templates/resetbytoken.tpl
+   (compile 0.00000) (render 0.00007) (cache 0.00000)
+/var/www/templates/footer.tpl
+   (compile 0.00000) (render 0.00006) (cache 0.00000)
+assigned template variables
+$SCRIPT_NAME
+Origin: "Global"	
+Value
+"/index.php"	
+$action
+Origin: "Smarty object"	
+Value
+"resetbytoken"	
+$background_image
+Origin: "Smarty object"	
+Value
+"images/unsplash-space.jpeg"	
+$change_sshkey
+Origin: "Smarty object"	
+Value
+false	
+$custom_css
+Origin: "Smarty object"	
+Value
+""	
+$default_action
+Origin: "Smarty object"	
+Value
+"sendtoken"	
+$dependency_errors
+Origin: "Smarty object"	
+Value
+Array (0)	
+$display_footer
+Origin: "Smarty object"	
+Value
+false	
+$error
+Origin: "Smarty object"	
+Value
+"A senha foi alterada"	
+$extended_error_msg
+Origin: "Smarty object"	
+Value
+""	
+$lang
+Origin: "Smarty object"	
+Value
+"pt-BR"	
+$ldap_params
+Origin: "Smarty object"	
+Value
+Array (4)
+ldap_url => "ldap://200.132.218.160"
+ldap_starttls => false
+ldap_binddn => "cn=srv_password_change,ou=services,ou=usuarios,ou=campus,dc=campus,dc=sertao,..."
+ldap_bindpw => "At638ch%$2873utgApa"	
+$login
+Origin: "Smarty object"	
+Value
+"1647383"	
+$logo
+Origin: "Smarty object"	
+Value
+"images/ltb-logo.png"	
+$mail_address_use_ldap
+Origin: "Smarty object"	
+Value
+true	
+$msg_answer
+Origin: "Smarty object"	
+Value
+"Resposta"	
+$msg_answerchanged
+Origin: "Smarty object"	
+Value
+"A resposta foi registrada"	
+$msg_answermoderror
+Origin: "Smarty object"	
+Value
+"A resposta não foi registrada"	
+$msg_answernomatch
+Origin: "Smarty object"	
+Value
+"A resposta está incorreta"	
+$msg_answerrequired
+Origin: "Smarty object"	
+Value
+"Sem resposta"	
+$msg_badcaptcha
+Origin: "Smarty object"	
+Value
+"O captcha não foi digitado corretamente. Tente novamente."	
+$msg_badcredentials
+Origin: "Smarty object"	
+Value
+"Matrícula ou CPF incorretos"	
+$msg_badquality
+Origin: "Smarty object"	
+Value
+"Password quality is too low"	
+$msg_captcha
+Origin: "Smarty object"	
+Value
+"Captcha"	
+$msg_captcharequired
+Origin: "Smarty object"	
+Value
+"The captcha is required."	
+$msg_changehelp
+Origin: "Smarty object"	
+Value
+"Informe a senha atual e escolha uma nova."	
+$msg_changehelpquestions
+Origin: "Smarty object"	
+Value
+"<a href="?action=resetbyquestions">Redefina sua senha através de perguntas e ..."	
+$msg_changehelpreset
+Origin: "Smarty object"	
+Value
+"Esqueceu a senha?"	
+$msg_changehelpsms
+Origin: "Smarty object"	
+Value
+"<a href="?action=sendsms">Altere sua senha com SMS</a>"	
+$msg_changehelpsshkey
+Origin: "Smarty object"	
+Value
+"<a href="?action=changesshkey">Alterar a chave SSH</a>"	
+$msg_changehelptoken
+Origin: "Smarty object"	
+Value
+"<a href="?action=sendtoken">Redefina sua senha através do e-mail</a>"	
+$msg_changemessage
+Origin: "Smarty object"	
+Value
+"Olá {login}, Sua senha foi alterada. ATENÇÃO: A nova senha demora cerca de ..."	
+$msg_changesshkeyhelp
+Origin: "Smarty object"	
+Value
+"Digite sua senha e a nova chave SSH."	
+$msg_changesshkeymessage
+Origin: "Smarty object"	
+Value
+"Olá {login}, Sua chave SSH Key foi alterada. Se você não solicitou esta tro..."	
+$msg_changesshkeysubject
+Origin: "Smarty object"	
+Value
+"Sua chave SSH foi alterada"	
+$msg_changesubject
+Origin: "Smarty object"	
+Value
+"Sua senha foi alterada"	
+$msg_checkdatabeforesubmit
+Origin: "Smarty object"	
+Value
+"Please check your information before submitting the form"	
+$msg_confirmpassword
+Origin: "Smarty object"	
+Value
+"Confirmação da senha"	
+$msg_confirmpasswordrequired
+Origin: "Smarty object"	
+Value
+"Confirme a nova senha"	
+$msg_diffminchars
+Origin: "Smarty object"	
+Value
+"Your new password is too similar to your old password"	
+$msg_emptychangeform
+Origin: "Smarty object"	
+Value
+"Se você somente quer alterar sua senha, preencha o formulário e envie"	
+$msg_emptyresetbyquestionsform
+Origin: "Smarty object"	
+Value
+"Altere sua senha"	
+$msg_emptysendsmsform
+Origin: "Smarty object"	
+Value
+"Receba um código para alteração de senha"	
+$msg_emptysendtokenform
+Origin: "Smarty object"	
+Value
+"Insira matrícula ou CPF, envie e confira seu e-mail institucional"	
+$msg_emptysetquestionsform
+Origin: "Smarty object"	
+Value
+"Defina suas questões para alteração de senha"	
+$msg_emptysshkeychangeform
+Origin: "Smarty object"	
+Value
+"Alterar a chave SSH"	
+$msg_forbiddenchars
+Origin: "Smarty object"	
+Value
+"A senha contém caracteres proibidos"	
+$msg_forbiddenldapfields
+Origin: "Smarty object"	
+Value
+"Your password contains values from your LDAP entry"	
+$msg_forbiddenwords
+Origin: "Smarty object"	
+Value
+"Your passwords contains forbidden words or strings"	
+$msg_getuser
+Origin: "Smarty object"	
+Value
+"Esqueci o usuário"	
+$msg_inhistory
+Origin: "Smarty object"	
+Value
+"Password is in history of old passwords"	
+$msg_invalidsshkey
+Origin: "Smarty object"	
+Value
+"Input SSH Key looks invalid"	
+$msg_ldap_cn
+Origin: "Smarty object"	
+Value
+"common name"	
+$msg_ldap_givenName
+Origin: "Smarty object"	
+Value
+"given name"	
+$msg_ldap_mail
+Origin: "Smarty object"	
+Value
+"mail address"	
+$msg_ldap_sn
+Origin: "Smarty object"	
+Value
+"surname"	
+$msg_ldaperror
+Origin: "Smarty object"	
+Value
+"Não foi possível acessar o diretório LDAP"	
+$msg_login
+Origin: "Smarty object"	
+Value
+"Matrícula ou CPF"	
+$msg_loginrequired
+Origin: "Smarty object"	
+Value
+"A sua matrícula ou CPF são necessários"	
+$msg_mail
+Origin: "Smarty object"	
+Value
+"E-mail"	
+$msg_mailnomatch
+Origin: "Smarty object"	
+Value
+"O e-mail não coincide com nenhum usuário"	
+$msg_mailrequired
+Origin: "Smarty object"	
+Value
+"O e-mail é necessário"	
+$msg_menuquestions
+Origin: "Smarty object"	
+Value
+"Pergunta"	
+$msg_menusms
+Origin: "Smarty object"	
+Value
+"SMS"	
+$msg_menusshkey
+Origin: "Smarty object"	
+Value
+"Chave SSH"	
+$msg_menutoken
+Origin: "Smarty object"	
+Value
+"Recuperar senha por e-mail"	
+$msg_mindigit
+Origin: "Smarty object"	
+Value
+"A senha não contém caracteres suficientes"	
+$msg_minlower
+Origin: "Smarty object"	
+Value
+"A senha não contém letras minúsculas suficientes"	
+$msg_minspecial
+Origin: "Smarty object"	
+Value
+"A senha não contém caracteres especiais"	
+$msg_minupper
+Origin: "Smarty object"	
+Value
+"A senha não contém letras maiúsculas suficientes"	
+$msg_newpassword
+Origin: "Smarty object"	
+Value
+"Senha nova"	
+$msg_newpasswordrequired
+Origin: "Smarty object"	
+Value
+"A nova senha é necessária"	
+$msg_nokeyphrase
+Origin: "Smarty object"	
+Value
+"Criptografia do Token necessita de uma string aleatória nas configuração de k..."	
+$msg_nomatch
+Origin: "Smarty object"	
+Value
+"As senhas não coincidem"	
+$msg_nophpldap
+Origin: "Smarty object"	
+Value
+"Você deve instalar o PHP LDAP para utilizar esta ferramenta"	
+$msg_nophpmbstring
+Origin: "Smarty object"	
+Value
+"Você deve instalar a biblioteca PHP mbstring"	
+$msg_nophpmhash
+Origin: "Smarty object"	
+Value
+"Você deve instalar o PHP mhash para utilizar o Samba mode"	
+$msg_nophpxml
+Origin: "Smarty object"	
+Value
+"Você deve instalar o PHP XML para utilizar esta ferramenta"	
+$msg_notcomplex
+Origin: "Smarty object"	
+Value
+"Sua senha não possui diferentes tipos de caracteres suficientes para torná-la..."	
+$msg_oldpassword
+Origin: "Smarty object"	
+Value
+"Senha atual"	
+$msg_oldpasswordrequired
+Origin: "Smarty object"	
+Value
+"A senha atual é necessária"	
+$msg_password
+Origin: "Smarty object"	
+Value
+"Senha"	
+$msg_passwordchanged
+Origin: "Smarty object"	
+Value
+"A senha foi alterada"	
+$msg_passworderror
+Origin: "Smarty object"	
+Value
+"A senha foi recusada pelo Diretório LDAP"	
+$msg_passwordrequired
+Origin: "Smarty object"	
+Value
+"A senha é necessária"	
+$msg_phpupgraderequired
+Origin: "Smarty object"	
+Value
+"O seu PHP necessita de upgrade"	
+$msg_policy
+Origin: "Smarty object"	
+Value
+"A senha deve respeitar as regras de restrição:"	
+$msg_policycomplex
+Origin: "Smarty object"	
+Value
+"Quantidade mínima de tipos de caracteres: "	
+$msg_policydifflogin
+Origin: "Smarty object"	
+Value
+"Sua nova senha não pode ser igual ao seu nome de usuário"	
+$msg_policydiffminchars
+Origin: "Smarty object"	
+Value
+"Minimum number of new unique characters:"	
+$msg_policyforbiddenchars
+Origin: "Smarty object"	
+Value
+"Caracteres proibidos: "	
+$msg_policyforbiddenldapfields
+Origin: "Smarty object"	
+Value
+"Your password may not contain values from the following LDAP fields:"	
+$msg_policyforbiddenwords
+Origin: "Smarty object"	
+Value
+"Your password must not contain:"	
+$msg_policymaxlength
+Origin: "Smarty object"	
+Value
+"Tamanho máximo: "	
+$msg_policymindigit
+Origin: "Smarty object"	
+Value
+"Mínimo de números: "	
+$msg_policyminlength
+Origin: "Smarty object"	
+Value
+"Tamanho mínimo: "	
+$msg_policyminlower
+Origin: "Smarty object"	
+Value
+"Mínimo de letras minúsculas: "	
+$msg_policyminspecial
+Origin: "Smarty object"	
+Value
+"Mínimo de caracteres especiais: "	
+$msg_policyminupper
+Origin: "Smarty object"	
+Value
+"Máximo de letras maiúsculas: "	
+$msg_policynoreuse
+Origin: "Smarty object"	
+Value
+"A senha nova não deve ser igual a senha atual"	
+$msg_policypwned
+Origin: "Smarty object"	
+Value
+"Parece que sua nova senha não foi publicada como vazada de qualquer site"	
+$msg_policyspecialatends
+Origin: "Smarty object"	
+Value
+"Your new password may not have its only special character at the beginning or..."	
+$msg_pwned
+Origin: "Smarty object"	
+Value
+"Sua nova senha já foi publicada como vazada, você deveria alterá-la em qualqu..."	
+$msg_question
+Origin: "Smarty object"	
+Value
+"Pergunta"	
+$msg_questionrequired
+Origin: "Smarty object"	
+Value
+"Nenhuma pergunta selecionada"	
+$msg_questions
+Origin: "Smarty object"	
+Value
+Array (2)
+birthday => "Quando é o seu aniversário?"
+color => "Qual é a sua cor favorita?"	
+$msg_questionspopulatehint
+Origin: "Smarty object"	
+Value
+"Enter only your login to retrieve the questions you've registered."	
+$msg_resetbyquestionshelp
+Origin: "Smarty object"	
+Value
+"Você deve escolher uma pergunta e respondê-la <a href="?action=setquestions">..."	
+$msg_resetbysmshelp
+Origin: "Smarty object"	
+Value
+"O token enviado por sms permite você alterar sua senha. Para recer um novo to..."	
+$msg_resetbytokenhelp
+Origin: "Smarty object"	
+Value
+"O código enviado por e-mail permite que você redefina a senha. Para enviar um..."	
+$msg_resetmessage
+Origin: "Smarty object"	
+Value
+"Olá {login}, Clique aqui para redefinir sua senha: {url} Se você não tem ce..."	
+$msg_resetsubject
+Origin: "Smarty object"	
+Value
+"Redefina sua senha"	
+$msg_sameaslogin
+Origin: "Smarty object"	
+Value
+"Sua nova senha é idêntica ao seu nome de usuário"	
+$msg_sameasold
+Origin: "Smarty object"	
+Value
+"A senha nova é igual a senha atual"	
+$msg_sendsmshelp
+Origin: "Smarty object"	
+Value
+"Informe seu nome de usuário para obter o código para redefinir sua senha. Dep..."	
+$msg_sendtokenhelp
+Origin: "Smarty object"	
+Value
+"Entre com o seu nome de usuário e e-mail para redefinir sua senha. Em seguida..."	
+$msg_sendtokenhelpnomail
+Origin: "Smarty object"	
+Value
+"Entre com o sua Matrícula ou CPF para redefinir sua senha. Em seguida clique ..."	
+$msg_setquestionshelp
+Origin: "Smarty object"	
+Value
+"Inicializar ou mudar a tua pergunta/resposta de redefinição de senha. Você po..."	
+$msg_sms
+Origin: "Smarty object"	
+Value
+"Número SMS"	
+$msg_smscrypttokensrequired
+Origin: "Smarty object"	
+Value
+"Você não pode utilizar redefinição via SMS sem a configuração crypt_tokens"	
+$msg_smsnonumber
+Origin: "Smarty object"	
+Value
+"Não foi possível encontrar o número"	
+$msg_smsnotsent
+Origin: "Smarty object"	
+Value
+"Erro ao enviar SMS"	
+$msg_smsresetmessage
+Origin: "Smarty object"	
+Value
+"Seu código para redefinir a senha é:"	
+$msg_smssent
+Origin: "Smarty object"	
+Value
+"Um código de confirmação foi enviado via SMS"	
+$msg_smstoken
+Origin: "Smarty object"	
+Value
+"Código SMS"	
+$msg_smsuserfound
+Origin: "Smarty object"	
+Value
+"Verifique se as informações do usuário estão corretas e pressione Enviar para..."	
+$msg_specialatends
+Origin: "Smarty object"	
+Value
+"Your new password has its only special character at the beginning or end"	
+$msg_sshkey
+Origin: "Smarty object"	
+Value
+"Chave pública SSH"	
+$msg_sshkeychanged
+Origin: "Smarty object"	
+Value
+"Sua chave SSH foi alterada"	
+$msg_sshkeyerror
+Origin: "Smarty object"	
+Value
+"A chave SSH foi recusada pelo diretório LDAP"	
+$msg_sshkeyrequired
+Origin: "Smarty object"	
+Value
+"A chave SSH é necessária"	
+$msg_submit
+Origin: "Smarty object"	
+Value
+"Enviar"	
+$msg_tab_title
+Origin: "Smarty object"	
+Value
+"Redefinição de Senhas - Moodle - IFRS Campus Sertão"	
+$msg_throttle
+Origin: "Smarty object"	
+Value
+"Too fast! Please try again later (if ever you are human)"	
+$msg_title
+Origin: "Smarty object"	
+Value
+"Alterar senha"	
+$msg_tokenattempts
+Origin: "Smarty object"	
+Value
+"Token inválido, tente novamente"	
+$msg_tokennotsent
+Origin: "Smarty object"	
+Value
+"Erro durante o envio do e-mail de confirmação"	
+$msg_tokennotvalid
+Origin: "Smarty object"	
+Value
+"Código inválido"	
+$msg_tokenrequired
+Origin: "Smarty object"	
+Value
+"O código é necessário"	
+$msg_tokensent
+Origin: "Smarty object"	
+Value
+"Confira o link no seu e-mail institucional"	
+$msg_toobig
+Origin: "Smarty object"	
+Value
+"A senha é muito grande"	
+$msg_tooshort
+Origin: "Smarty object"	
+Value
+"A senha é muito curta"	
+$msg_tooyoung
+Origin: "Smarty object"	
+Value
+"Password was changed too recently"	
+$msg_userfullname
+Origin: "Smarty object"	
+Value
+"Nome completo"	
+$msg_username
+Origin: "Smarty object"	
+Value
+"Nome"	
+$posthook_return
+Origin: "Smarty object"	
+Value
+false	
+$prehook_return
+Origin: "Smarty object"	
+Value
+false	
+$pwd_complexity
+Origin: "Smarty object"	
+Value
+0	
+$pwd_diff_last_min_chars
+Origin: "Smarty object"	
+Value
+0	
+$pwd_diff_login
+Origin: "Smarty object"	
+Value
+true	
+$pwd_forbidden_chars
+Origin: "Smarty object"	
+Value
+""	
+$pwd_max_length
+Origin: "Smarty object"	
+Value
+0	
+$pwd_min_digit
+Origin: "Smarty object"	
+Value
+0	
+$pwd_min_length
+Origin: "Smarty object"	
+Value
+0	
+$pwd_min_lower
+Origin: "Smarty object"	
+Value
+0	
+$pwd_min_special
+Origin: "Smarty object"	
+Value
+0	
+$pwd_min_upper
+Origin: "Smarty object"	
+Value
+0	
+$pwd_no_reuse
+Origin: "Smarty object"	
+Value
+true	
+$pwd_no_special_at_ends
+Origin: "Smarty object"	
+Value
+false	
+$pwd_show_policy
+Origin: "Smarty object"	
+Value
+"never"	
+$pwd_show_policy_onerror
+Origin: "Smarty object"	
+Value
+true	
+$pwd_show_policy_pos
+Origin: "Smarty object"	
+Value
+"above"	
+$question_populate_enable
+Origin: "Smarty object"	
+Value
+false	
+$questions_count
+Origin: "Smarty object"	
+Value
+1	
+$result
+Origin: "Smarty object"	
+Value
+"passwordchanged"	
+$result_criticity
+Origin: "Smarty object"	
+Value
+"success"	
+$result_fa_class
+Origin: "Smarty object"	
+Value
+"fa-check-square"	
+$show_extended_error
+Origin: "Smarty object"	
+Value
+false	
+$show_help
+Origin: "Smarty object"	
+Value
+false	
+$show_menu
+Origin: "Smarty object"	
+Value
+true	
+$source
+Origin: "Smarty object"	
+Value
+"unknown"	
+$token
+Origin: "Smarty object"	
+Value
+"3vUCAJi0Xk9plzWaEqJvn8csXwZWpu2G8qelDUWxKybuEJhsv/Hpqw//ic0zvoX6U9GoS8kK6Bv+y..."	
+$use_captcha
+Origin: "Smarty object"	
+Value
+false	
+$use_pwnedpasswords
+Origin: "Smarty object"	
+Value
+false	
+$use_questions
+Origin: "Smarty object"	
+Value
+false	
+$use_sms
+Origin: "Smarty object"	
+Value
+false	
+$use_tokens
+Origin: "Smarty object"	
+Value
+true	
+$version
+Origin: "Smarty object"	
+Value
+"1.5"	
+assigned config file variables

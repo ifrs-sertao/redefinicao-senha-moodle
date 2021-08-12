@@ -1,0 +1,40 @@
+senha-moodle_1  | AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 192.168.96.2. Set the 'ServerName' directive globally to suppress this message
+senha-moodle_1  | [Fri May 14 14:41:16.847383 2021] [core:warn] [pid 1] AH00111: Config variable ${PASSWORD_AD} is not defined
+senha-moodle_1  | AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 192.168.96.2. Set the 'ServerName' directive globally to suppress this message
+senha-moodle_1  | [Fri May 14 14:41:16.861673 2021] [mpm_prefork:notice] [pid 1] AH00163: Apache/2.4.38 (Debian) PHP/7.4.19 configured -- resuming normal operations
+senha-moodle_1  | [Fri May 14 14:41:16.861695 2021] [core:notice] [pid 1] AH00094: Command line: 'apache2 -D FOREGROUND'
+senha-moodle_1  | ldap_url_parse_ext(ldap://localhost/)
+senha-moodle_1  | ldap_init: trying /etc/ldap/ldap.conf
+senha-moodle_1  | ldap_init: using /etc/ldap/ldap.conf
+senha-moodle_1  | ldap_init: HOME env is NULL
+senha-moodle_1  | ldap_init: trying ldaprc
+senha-moodle_1  | ldap_init: LDAPCONF env is NULL
+senha-moodle_1  | ldap_init: LDAPRC env is NULL
+senha-moodle_1  | 192.168.96.1 - - [14/May/2021:14:41:30 +0000] "GET /index.php?action=sendtoken HTTP/1.1" 200 6738 "http://localhost:7777/index.php?action=sendtoken" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.114 Safari/537.36"
+senha-moodle_1  | 192.168.96.1 - - [14/May/2021:14:41:30 +0000] "GET /images/unsplash-space.jpeg HTTP/1.1" 404 489 "http://localhost:7777/index.php?action=sendtoken" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.114 Safari/537.36"
+senha-moodle_1  | 192.168.96.1 - - [14/May/2021:14:41:30 +0000] "GET /images/favicon.ico HTTP/1.1" 304 180 "http://localhost:7777/index.php?action=sendtoken" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.114 Safari/537.36"
+senha-moodle_1  | [Fri May 14 14:42:03.372295 2021] [php7:notice] [pid 18] [client 192.168.96.1:56094] Send reset URL http://localhost:7777/index.php?action=resetbytoken&token=3vUCAJi0Xk9plzWaEqJvn8csXwZWpu2G8qelDUWxKybuEJhsv%2FHpqw%2F%2Fic0zvoX6U9GoS8kK6Bv%2By7%2F%2BIcskuHfjdTX1VdrQhVFbeUHkPdCBptt7IYWt7lfyjugZtKbznfzjhDIOk5xXYv7pkks%3D, referer: http://localhost:7777/index.php?action=sendtoken
+senha-moodle_1  | ldap_msgfree
+senha-moodle_1  | ldap_free_connection 1 1
+senha-moodle_1  | ldap_send_unbind
+senha-moodle_1  | ldap_free_connection: actually freed
+senha-moodle_1  | 192.168.96.1 - - [14/May/2021:14:42:02 +0000] "POST /index.php?action=sendtoken HTTP/1.1" 200 6942 "http://localhost:7777/index.php?action=sendtoken" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.114 Safari/537.36"
+senha-moodle_1  | 192.168.96.1 - - [14/May/2021:14:42:07 +0000] "GET /images/unsplash-space.jpeg HTTP/1.1" 404 489 "http://localhost:7777/index.php?action=sendtoken" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.114 Safari/537.36"
+senha-moodle_1  | [Fri May 14 14:42:16.247171 2021] [php7:notice] [pid 19] [client 192.168.96.1:56100] PHP Notice:  Undefined index: smstoken in /var/www/html/resetbytoken.php on line 62
+senha-moodle_1  | ldap_url_parse_ext(ldap://localhost/)
+senha-moodle_1  | ldap_init: trying /etc/ldap/ldap.conf
+senha-moodle_1  | ldap_init: using /etc/ldap/ldap.conf
+senha-moodle_1  | ldap_init: HOME env is NULL
+senha-moodle_1  | ldap_init: trying ldaprc
+senha-moodle_1  | ldap_init: LDAPCONF env is NULL
+senha-moodle_1  | ldap_init: LDAPRC env is NULL
+senha-moodle_1  | 192.168.96.1 - - [14/May/2021:14:42:16 +0000] "GET /index.php?action=resetbytoken&token=3vUCAJi0Xk9plzWaEqJvn8csXwZWpu2G8qelDUWxKybuEJhsv%2FHpqw%2F%2Fic0zvoX6U9GoS8kK6Bv%2By7%2F%2BIcskuHfjdTX1VdrQhVFbeUHkPdCBptt7IYWt7lfyjugZtKbznfzjhDIOk5xXYv7pkks%3D HTTP/1.1" 200 7228 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.114 Safari/537.36"
+senha-moodle_1  | 192.168.96.1 - - [14/May/2021:14:42:16 +0000] "GET /images/unsplash-space.jpeg HTTP/1.1" 404 489 "http://localhost:7777/index.php?action=resetbytoken&token=3vUCAJi0Xk9plzWaEqJvn8csXwZWpu2G8qelDUWxKybuEJhsv%2FHpqw%2F%2Fic0zvoX6U9GoS8kK6Bv%2By7%2F%2BIcskuHfjdTX1VdrQhVFbeUHkPdCBptt7IYWt7lfyjugZtKbznfzjhDIOk5xXYv7pkks%3D" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.114 Safari/537.36"
+senha-moodle_1  | [Fri May 14 14:42:23.618446 2021] [php7:notice] [pid 20] [client 192.168.96.1:56112] PHP Notice:  Undefined index: smstoken in /var/www/html/resetbytoken.php on line 62, referer: http://localhost:7777/index.php?action=resetbytoken&token=3vUCAJi0Xk9plzWaEqJvn8csXwZWpu2G8qelDUWxKybuEJhsv%2FHpqw%2F%2Fic0zvoX6U9GoS8kK6Bv%2By7%2F%2BIcskuHfjdTX1VdrQhVFbeUHkPdCBptt7IYWt7lfyjugZtKbznfzjhDIOk5xXYv7pkks%3D
+senha-moodle_1  | ldap_msgfree
+senha-moodle_1  | ldap_free_connection 1 1
+senha-moodle_1  | ldap_send_unbind
+senha-moodle_1  | ldap_free_connection: actually freed
+senha-moodle_1  | 192.168.96.1 - - [14/May/2021:14:42:23 +0000] "POST /index.php?action=resetbytoken&token=3vUCAJi0Xk9plzWaEqJvn8csXwZWpu2G8qelDUWxKybuEJhsv%2FHpqw%2F%2Fic0zvoX6U9GoS8kK6Bv%2By7%2F%2BIcskuHfjdTX1VdrQhVFbeUHkPdCBptt7IYWt7lfyjugZtKbznfzjhDIOk5xXYv7pkks%3D HTTP/1.1" 200 6720 "http://localhost:7777/index.php?action=resetbytoken&token=3vUCAJi0Xk9plzWaEqJvn8csXwZWpu2G8qelDUWxKybuEJhsv%2FHpqw%2F%2Fic0zvoX6U9GoS8kK6Bv%2By7%2F%2BIcskuHfjdTX1VdrQhVFbeUHkPdCBptt7IYWt7lfyjugZtKbznfzjhDIOk5xXYv7pkks%3D" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.114 Safari/537.36"
+senha-moodle_1  | 192.168.96.1 - - [14/May/2021:14:42:23 +0000] "GET /images/unsplash-space.jpeg HTTP/1.1" 404 489 "http://localhost:7777/index.php?action=resetbytoken&token=3vUCAJi0Xk9plzWaEqJvn8csXwZWpu2G8qelDUWxKybuEJhsv%2FHpqw%2F%2Fic0zvoX6U9GoS8kK6Bv%2By7%2F%2BIcskuHfjdTX1VdrQhVFbeUHkPdCBptt7IYWt7lfyjugZtKbznfzjhDIOk5xXYv7pkks%3D" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.114 Safari/537.36"
+senha-moodle_1  | 192.168.96.1 - - [14/May/2021:14:43:15 +0000] "-" 408 0 "-" "-"

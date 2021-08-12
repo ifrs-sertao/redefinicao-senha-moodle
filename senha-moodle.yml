@@ -5,7 +5,7 @@ services:
   senha-moodle:
     image: ltbproject/self-service-password # https://hub.docker.com/r/ltbproject/self-service-password
     ports:
-      - "7777:80"
+      - "7777:80"  #local/application
     volumes: 
       - ./data/config/config.inc.local.php:/var/www/conf/config.inc.local.php
       - ./data/lang/pt-BR.inc.php:/var/www/lang/pt-BR.inc.php
@@ -14,26 +14,27 @@ services:
       - ./data/templates/menu.tpl:/var/www/templates/menu.tpl
       - ./data/templates/footer.tpl:/var/www/templates/footer.tpl
       - ./data/templates/header.tpl:/var/www/templates/header.tpl
+      - ./data/apache2/sites-available/000-default.conf:/etc/apache2/sites-available/000-default.conf
 
-    # networks:
-    #   - traefik-net
-    #   -   senha-moodle-net
-    # deploy:
-    #   mode: replicated
-    #   replicas: 1
-    #   placement:
-    #     constraints: [node.role == manager]
-    #   labels:
-    #     - "traefik.docker.network=traefik-net"
-    #     - "traefik.frontend.rule=Host:senha-moodle.sertao.ifrs.edu.br"
-    #     - "traefik.port=3091"
-    #     - "traefik.backend=senha-moodle-net"
+#     networks:
+#       - traefik-net
+#       -   senha-moodle-net
+#     deploy:
+#       mode: replicated
+#       replicas: 1
+#       placement:
+#         constraints: [node.role == manager]
+#       labels:
+#         - "traefik.docker.network=traefik-net"
+#         - "traefik.frontend.rule=Host:senha-moodle.sertao.ifrs.edu.br"
+#         - "traefik.port=80" # application port
+#         - "traefik.backend=senha-moodle"
 
 # networks:
-  # traefik-net:
-  #    external: true
-  # senha-moodle-net:
-  #   driver: overlay
+#   traefik-net:
+#      external: true
+#   senha-moodle-net:
+#     driver: overlay
 
 volumes:
   data:
@@ -42,4 +43,4 @@ volumes:
 
 # Comando para executar o container
 # docker container run -d --name senha-moodle -p 7777:80 senha-moodle
-# docker stack deploy -c password-self-service.yml senha-moodle
+# docker stack deploy -c senha-moodle.yml senha-moodle
